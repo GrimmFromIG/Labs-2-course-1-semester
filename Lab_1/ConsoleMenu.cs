@@ -14,7 +14,6 @@ namespace Lab_1.UI
 
         public static void ShowCountAndList(Student[] students, int count)
         {
-            // Рахуємо студентів 3 курсу з України
             int target = 0;
             for (int i = 0; i < count; i++)
             {
@@ -28,7 +27,6 @@ namespace Lab_1.UI
             Console.WriteLine($"Кількість студентів 3-го курсу з України: {target}");
             Console.WriteLine();
 
-            // Перераховуємо їх
             for (int i = 0; i < count; i++)
             {
                 var s = students[i];
@@ -189,7 +187,6 @@ namespace Lab_1.UI
             {
                 if (students[i]?.ID == id)
                 {
-                    // Зсуваємо всі елементи праворуч від видаленого на одну позицію вліво
                     for (int j = i; j < studentCount - 1; j++)
                     {
                         students[j] = students[j + 1];

@@ -6,7 +6,7 @@ namespace Lab_1.Domain
 
     public abstract class Person
     {
-        public string LastName;    
+        public string LastName;
 
         protected Person(string last)
         {
@@ -19,11 +19,11 @@ namespace Lab_1.Domain
 
     public sealed class Student : Person, ICanPlayChess
     {
-        public string StudentId;   
-        public int Course;         
-        public double AvgGrade;    // Середній бал
-        public string Country;     // Країна проживання
-        public int ID;             // Унікальний ідентифікатор
+        public string StudentId;
+        public int Course;
+        public double AvgGrade;
+        public string Country;
+        public int ID;
 
         public Student(string last, string studentId, int course, double avgGrade, string country, int id)
             : base(last)
@@ -38,8 +38,8 @@ namespace Lab_1.Domain
             ID = id;
         }
 
-        public void PlayChess() 
-        { 
+        public void PlayChess()
+        {
             Console.WriteLine($"Студент {LastName} грає в шахи");
         }
 
@@ -57,8 +57,8 @@ namespace Lab_1.Domain
             Position = position ?? "";
         }
 
-        public void PlayChess() 
-        { 
+        public void PlayChess()
+        {
             Console.WriteLine($"Працівник McDonald's {LastName} грає в шахи");
         }
     }
@@ -71,8 +71,8 @@ namespace Lab_1.Domain
             Department = department ?? "";
         }
 
-        public void PlayChess() 
-        { 
+        public void PlayChess()
+        {
             Console.WriteLine($"Менеджер {LastName} грає в шахи");
         }
     }

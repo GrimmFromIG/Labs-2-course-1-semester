@@ -14,43 +14,36 @@ namespace Lab_1.IO
                             McDonaldWorker[] workers, int workerCount,
                             Manager[] managers, int managerCount)
         {
-            using var w = new StreamWriter(_path, false);
+            using var fs = new FileStream(_path, FileMode.Create);
+            using var writer = new BinaryWriter(fs);
             
-            // Студенти
+            writer.Write(studentCount);
+            
             for (int i = 0; i < studentCount; i++)
             {
                 var s = students[i];
-                w.WriteLine($"Student {s.LastName}");
-                w.WriteLine("{");
-                w.WriteLine($"  \"lastname\": \"{s.LastName}\",");
-                w.WriteLine($"  \"studentId\": \"{s.StudentId}\",");
-                w.WriteLine($"  \"course\": \"{s.Course}\",");
-                w.WriteLine($"  \"avggrade\": \"{s.AvgGrade}\",");
-                w.WriteLine($"  \"country\": \"{s.Country}\",");
-                w.WriteLine($"  \"id\": \"{s.ID}\"");
-                w.WriteLine("};");
+                WriteString(writer, s.LastName);
+                WriteString(writer, s.StudentId);
+                writer.Write(s.Course);
+                writer.Write(s.AvgGrade);
+                WriteString(writer, s.Country);
+                writer.Write(s.ID);
             }
-
-            // Працівники McDonald's
+            
+            writer.Write(workerCount);
             for (int i = 0; i < workerCount; i++)
             {
-                var ww = workers[i];
-                w.WriteLine($"McDonaldWorker {ww.LastName}");
-                w.WriteLine("{");
-                w.WriteLine($"  \"lastname\": \"{ww.LastName}\",");
-                w.WriteLine($"  \"position\": \"{ww.Position}\"");
-                w.WriteLine("};");
+                var w = workers[i];
+                WriteString(writer, w.LastName);
+                WriteString(writer, w.Position);
             }
-
-            // Менеджери
+            
+            writer.Write(managerCount);
             for (int i = 0; i < managerCount; i++)
             {
                 var m = managers[i];
-                w.WriteLine($"Manager {m.LastName}");
-                w.WriteLine("{");
-                w.WriteLine($"  \"lastname\": \"{m.LastName}\",");
-                w.WriteLine($"  \"department\": \"{m.Department}\"");
-                w.WriteLine("};");
+                WriteString(writer, m.LastName);
+                WriteString(writer, m.Department);
             }
         }
 
@@ -62,126 +55,65 @@ namespace Lab_1.IO
 
             if (!File.Exists(_path)) return;
 
-            using var r = new StreamReader(_path);
-            string line;
-            while ((line = ReadNonEmpty(r)) != null)
+            using var fs = new FileStream(_path, FileMode.Open);
+            using var reader = new BinaryReader(fs);
+            
+            try
             {
-                var header = line.Trim();
-                var space = header.IndexOf(' ');
-                if (space <= 0) throw new InvalidDataException("Bad header line: " + header);
-                var type = header.Substring(0, space);
-
-                string block = ReadBlock(r); 
-
-                ParseKeyValues(block, out string lastname,
-                               out string studentId, out string courseStr,
-                               out string avgGradeStr, out string country,
-                               out string idStr, out string position, out string department);
-
-                switch (type)
-                {
-                    case "Student":
-                        {
-                            int course = SafeInt(courseStr, 1);
-                            double avgGrade = SafeDouble(avgGradeStr, 0);
-                            int id = SafeInt(idStr, 0);
-                            
-                            var s = new Student(lastname, studentId, course, avgGrade, country, id);
-                            students[studentCount++] = s;
-                        }
-                        break;
-
-                    case "McDonaldWorker":
-                        {
-                            var ww = new McDonaldWorker(lastname, position ?? "");
-                            workers[workerCount++] = ww;
-                        }
-                        break;
-
-                    case "Manager":
-                        {
-                            var m = new Manager(lastname, department ?? "");
-                            managers[managerCount++] = m;
-                        }
-                        break;
-
-                    default:
-                        throw new InvalidDataException("Unknown type: " + type);
-                }
-            }
-        }
-
-        private static string ReadNonEmpty(StreamReader r)
-        {
-            string s;
-            while ((s = r.ReadLine()) != null)
-            {
-                s = s.Trim();
-                if (s.Length == 0) continue;
-                return s;
-            }
-            return null;
-        }
-
-        private static string ReadBlock(StreamReader r)
-        {
-            string open = ReadNonEmpty(r);
-            if (open == null || !open.StartsWith("{"))
-                throw new InvalidDataException("Expected '{'");
-
-            string line, acc = "";
-            while ((line = r.ReadLine()) != null)
-            {
-                if (line.Trim() == "};") break;
-                acc += line + "\n";
-            }
-            return acc;
-        }
-
-        private static void ParseKeyValues(
-            string block,
-            out string lastname,
-            out string studentId, out string course,
-            out string avgGrade, out string country,
-            out string id, out string position, out string department)
-        {
-            lastname = studentId = course = avgGrade = country = id = position = department = null;
-
-            var lines = block.Split('\n');
-            for (int i = 0; i < lines.Length; i++)
-            {
-                var raw = lines[i].Trim().TrimEnd(',');
-                if (raw.Length == 0) continue;
+                studentCount = reader.ReadInt32();
                 
-                int c = raw.IndexOf(':');
-                if (c <= 0) continue;
-                var k = raw.Substring(0, c).Trim().Trim('"');
-                var v = raw.Substring(c + 1).Trim().Trim('"');
-
-                switch (k)
+                for (int i = 0; i < studentCount; i++)
                 {
-                    case "lastname": lastname = v; break;
-                    case "studentId": studentId = v; break;
-                    case "course": course = v; break;
-                    case "avggrade": avgGrade = v; break;
-                    case "country": country = v; break;
-                    case "id": id = v; break;
-                    case "position": position = v; break;
-                    case "department": department = v; break;
+                    string lastName = ReadString(reader);
+                    string studentId = ReadString(reader);
+                    int course = reader.ReadInt32();
+                    double avgGrade = reader.ReadDouble();
+                    string country = ReadString(reader);
+                    int id = reader.ReadInt32();
+                    
+                    students[i] = new Student(lastName, studentId, course, avgGrade, country, id);
                 }
+                
+                workerCount = reader.ReadInt32();
+                for (int i = 0; i < workerCount; i++)
+                {
+                    string lastName = ReadString(reader);
+                    string position = ReadString(reader);
+                    workers[i] = new McDonaldWorker(lastName, position);
+                }
+                
+                managerCount = reader.ReadInt32();
+                for (int i = 0; i < managerCount; i++)
+                {
+                    string lastName = ReadString(reader);
+                    string department = ReadString(reader);
+                    managers[i] = new Manager(lastName, department);
+                }
+            }
+            catch (EndOfStreamException)
+            {
             }
         }
 
-        private static int SafeInt(string s, int defVal)
+        private static void WriteString(BinaryWriter writer, string value)
         {
-            if (int.TryParse(s, out var x)) return x;
-            return defVal;
+            value ??= "";
+            writer.Write(value.Length);
+            foreach (char c in value)
+            {
+                writer.Write(c);
+            }
         }
 
-        private static double SafeDouble(string s, double defVal)
+        private static string ReadString(BinaryReader reader)
         {
-            if (double.TryParse(s, out var x)) return x;
-            return defVal;
+            int length = reader.ReadInt32();
+            char[] chars = new char[length];
+            for (int i = 0; i < length; i++)
+            {
+                chars[i] = reader.ReadChar();
+            }
+            return new string(chars);
         }
     }
 }

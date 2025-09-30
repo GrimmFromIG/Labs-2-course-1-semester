@@ -24,14 +24,12 @@ namespace Lab_1
                 ds.SaveAll(_students, _studentCount, _workers, _workerCount, _managers, _managerCount);
             }
 
-            // Чистимо масиви перед завантаженням
             Array.Clear(_students, 0, _students.Length);
             Array.Clear(_workers, 0, _workers.Length);
             Array.Clear(_managers, 0, _managers.Length);
             
             _studentCount = _workerCount = _managerCount = 0;
 
-            // Читаємо з файлу
             ds.LoadAll(_students, out _studentCount, _workers, out _workerCount, _managers, out _managerCount);
 
             ShowMainMenu(ds);
@@ -79,13 +77,10 @@ namespace Lab_1
 
         private static void SeedDemoData()
         {
-            // Студенти 3-го курсу з України
             _students[_studentCount++] = new Student("Shevchenko", "KB0001", 3, 85.5, "Ukraine", 1);
             _students[_studentCount++] = new Student("Petrenko", "KB0002", 3, 78.2, "Ukraine", 2);
             _students[_studentCount++] = new Student("Koval", "KB0003", 3, 92.0, "Ukraine", 3);
             _students[_studentCount++] = new Student("Bondar", "KB0004", 3, 88.7, "Ukraine", 4);
-            
-            // Інші студенти
             _students[_studentCount++] = new Student("Ivanov", "KB0005", 1, 75.0, "Ukraine", 5);
             _students[_studentCount++] = new Student("Kowalski", "KB0006", 2, 82.3, "Poland", 6);
             _students[_studentCount++] = new Student("Smith", "KB0007", 4, 79.8, "USA", 7);
