@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+    
+    <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -8,7 +12,19 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="obj\Domain\UI.cs" />
+      <Content Include="AppConsole\AppConsole.csproj" />
+      <Content Include="DataAccess\DataAccess.csproj" />
+      <Content Include="Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="AppConsole\bin\Debug\net6.0\" />
+      <Folder Include="DataAccess\bin\Debug\net6.0\" />
+      <Folder Include="DataAccess\obj\Debug\net6.0\refint\" />
+      <Folder Include="DataAccess\obj\Debug\net6.0\ref\" />
+      <Folder Include="Domain\bin\Debug\net6.0\" />
+      <Folder Include="Domain\obj\Debug\net6.0\refint\" />
+      <Folder Include="Domain\obj\Debug\net6.0\ref\" />
     </ItemGroup>
 
 </Project>
