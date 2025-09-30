@@ -1,0 +1,73 @@
+Student Shevchenko
+{
+  "lastname": "Shevchenko",
+  "studentId": "KB0001",
+  "course": "3",
+  "avggrade": "85,5",
+  "country": "Ukraine",
+  "id": "1"
+};
+Student Petrenko
+{
+  "lastname": "Petrenko",
+  "studentId": "KB0002",
+  "course": "3",
+  "avggrade": "78,2",
+  "country": "Ukraine",
+  "id": "2"
+};
+Student Koval
+{
+  "lastname": "Koval",
+  "studentId": "KB0003",
+  "course": "3",
+  "avggrade": "92",
+  "country": "Ukraine",
+  "id": "3"
+};
+Student Bondar
+{
+  "lastname": "Bondar",
+  "studentId": "KB0004",
+  "course": "3",
+  "avggrade": "88,7",
+  "country": "Ukraine",
+  "id": "4"
+};
+Student Ivanov
+{
+  "lastname": "Ivanov",
+  "studentId": "KB0005",
+  "course": "1",
+  "avggrade": "75",
+  "country": "Ukraine",
+  "id": "5"
+};
+Student Kowalski
+{
+  "lastname": "Kowalski",
+  "studentId": "KB0006",
+  "course": "2",
+  "avggrade": "82,3",
+  "country": "Poland",
+  "id": "6"
+};
+Student Smith
+{
+  "lastname": "Smith",
+  "studentId": "KB0007",
+  "course": "4",
+  "avggrade": "79,8",
+  "country": "USA",
+  "id": "7"
+};
+McDonaldWorker Ivanova
+{
+  "lastname": "Ivanova",
+  "position": "Cashier"
+};
+Manager Sydorenko
+{
+  "lastname": "Sydorenko",
+  "department": "IT Department"
+};
