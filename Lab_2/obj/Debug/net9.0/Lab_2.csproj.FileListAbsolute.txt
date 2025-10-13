@@ -1,0 +1,15 @@
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.AssemblyInfoInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.AssemblyInfo.cs
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.csproj.CoreCompileInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.sourcelink.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\bin\Debug\net9.0\Lab_2.exe
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\bin\Debug\net9.0\Lab_2.deps.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\bin\Debug\net9.0\Lab_2.runtimeconfig.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\bin\Debug\net9.0\Lab_2.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\bin\Debug\net9.0\Lab_2.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\refint\Lab_2.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\Lab_2.genruntimeconfig.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_2\obj\Debug\net9.0\ref\Lab_2.dll
