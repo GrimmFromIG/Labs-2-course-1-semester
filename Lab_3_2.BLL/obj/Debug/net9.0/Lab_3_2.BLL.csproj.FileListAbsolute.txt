@@ -1,0 +1,16 @@
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.AssemblyInfoInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.AssemblyInfo.cs
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.csproj.CoreCompileInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.sourcelink.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\bin\Debug\net9.0\Lab_3_2.BLL.deps.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\bin\Debug\net9.0\Lab_3_2.BLL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\bin\Debug\net9.0\Lab_3_2.BLL.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\bin\Debug\net9.0\Lab_3_2.DAL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\bin\Debug\net9.0\Lab_3_2.DAL.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.csproj.AssemblyReference.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2..99E606A9.Up2Date
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\refint\Lab_3_2.BLL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\Lab_3_2.BLL.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.BLL\obj\Debug\net9.0\ref\Lab_3_2.BLL.dll

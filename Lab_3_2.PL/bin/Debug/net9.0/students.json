@@ -1,0 +1,18 @@
+[
+  {
+    "LastName": "\u041F\u0435\u0442\u0440\u0443\u0448\u043A\u0430",
+    "Course": 3,
+    "StudentId": "122",
+    "AverageGrade": 2,
+    "Country": "\u041A\u0438\u0442\u0430\u0439 ",
+    "GradebookNumber": "1233"
+  },
+  {
+    "LastName": "\u041F\u0435\u0442\u0440\u0443\u0448\u043A\u0430",
+    "Course": 3,
+    "StudentId": "1223",
+    "AverageGrade": 3,
+    "Country": "\u0423\u043A\u0440\u0430\u0457\u043D\u0430",
+    "GradebookNumber": "3233"
+  }
+]

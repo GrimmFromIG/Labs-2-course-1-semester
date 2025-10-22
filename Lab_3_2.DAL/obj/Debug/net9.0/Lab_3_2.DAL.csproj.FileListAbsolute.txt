@@ -1,0 +1,12 @@
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.AssemblyInfoInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.AssemblyInfo.cs
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.csproj.CoreCompileInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.sourcelink.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\bin\Debug\net9.0\Lab_3_2.DAL.deps.json
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\bin\Debug\net9.0\Lab_3_2.DAL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\bin\Debug\net9.0\Lab_3_2.DAL.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\refint\Lab_3_2.DAL.dll
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\Lab_3_2.DAL.pdb
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2.DAL\obj\Debug\net9.0\ref\Lab_3_2.DAL.dll

@@ -13,4 +13,4 @@ C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_1\obj\Debug\net9.0\ref
 C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_1\obj\Debug\net9.0\Lab_1.pdb
 C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_1\obj\Debug\net9.0\Lab_1.genruntimeconfig.cache
 C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_1\obj\Debug\net9.0\ref\Lab_1.dll
-C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_1\bin\Debug\net9.0\students.txt
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_1\bin\Debug\net9.0\data.txt

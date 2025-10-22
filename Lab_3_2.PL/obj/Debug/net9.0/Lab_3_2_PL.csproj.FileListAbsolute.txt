@@ -1,0 +1,5 @@
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2_PL\obj\Debug\net9.0\Lab_3_2_PL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2_PL\obj\Debug\net9.0\Lab_3_2_PL.AssemblyInfoInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2_PL\obj\Debug\net9.0\Lab_3_2_PL.AssemblyInfo.cs
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2_PL\obj\Debug\net9.0\Lab_3_2_PL.csproj.CoreCompileInputs.cache
+C:\Users\gamer\RiderProjects\Labs-2-course-1-semester\Lab_3_2_PL\obj\Debug\net9.0\Lab_3_2_PL.sourcelink.json
