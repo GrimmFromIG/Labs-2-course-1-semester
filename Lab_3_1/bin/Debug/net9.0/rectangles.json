@@ -1,0 +1,42 @@
+[
+  {
+    "FillColor": "\u0427\u0435\u0440\u0432\u043E\u043D\u0438\u0439",
+    "BorderColor": "\u0427\u043E\u0440\u043D\u0438\u0439",
+    "SideA": 10,
+    "SideB": 5,
+    "Area": 50,
+    "Perimeter": 30
+  },
+  {
+    "FillColor": "\u0421\u0438\u043D\u0456\u0439",
+    "BorderColor": "\u0416\u043E\u0432\u0442\u0438\u0439",
+    "SideA": 7,
+    "SideB": 7,
+    "Area": 49,
+    "Perimeter": 28
+  },
+  {
+    "FillColor": "\u0417\u0435\u043B\u0435\u043D\u0438\u0439",
+    "BorderColor": "\u0427\u043E\u0440\u043D\u0438\u0439",
+    "SideA": 8.5,
+    "SideB": 3,
+    "Area": 25.5,
+    "Perimeter": 23
+  },
+  {
+    "FillColor": "\u0411\u0456\u043B\u0438\u0439",
+    "BorderColor": "\u0421\u0456\u0440\u0438\u0439",
+    "SideA": 12,
+    "SideB": 10,
+    "Area": 120,
+    "Perimeter": 44
+  },
+  {
+    "FillColor": "\u0416\u043E\u0432\u0442\u0438\u0439",
+    "BorderColor": "\u0427\u043E\u0440\u043D\u0438\u0439",
+    "SideA": 4,
+    "SideB": 6,
+    "Area": 24,
+    "Perimeter": 20
+  }
+]

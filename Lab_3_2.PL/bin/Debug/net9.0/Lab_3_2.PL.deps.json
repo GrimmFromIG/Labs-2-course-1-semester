@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Lab_3_2.PL/1.0.0": {
+        "dependencies": {
+          "Lab_3_2.BLL": "1.0.0"
+        },
+        "runtime": {
+          "Lab_3_2.PL.dll": {}
+        }
+      },
+      "Lab_3_2.BLL/1.0.0": {
+        "dependencies": {
+          "Lab_3_2.DAL": "1.0.0"
+        },
+        "runtime": {
+          "Lab_3_2.BLL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Lab_3_2.DAL/1.0.0": {
+        "runtime": {
+          "Lab_3_2.DAL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab_3_2.PL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lab_3_2.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lab_3_2.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

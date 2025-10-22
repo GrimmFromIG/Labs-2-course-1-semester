@@ -16,7 +16,7 @@ namespace BinaryTreeDemo
         }
     }
 
-    public class BinaryTree<T> : IEnumerable<T> where T : IComparable<T>
+    public class BinaryTree<T> : IEnumerable<T> where T : class, IComparable<T>
     {
         private BinaryTreeNode<T> root;
 
@@ -43,7 +43,7 @@ namespace BinaryTreeDemo
 
             return node;
         }
-
+        
         private void PostOrder(BinaryTreeNode<T> node, List<T> list)
         {
             if (node == null) return;
