@@ -755,6 +755,21 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Lab_5.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MSTest.TestAdapter": "4.0.2",
+          "MSTest.TestFramework": "4.0.2",
+          "Microsoft.NET.Test.Sdk": "18.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Lab_5.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_5.BLL.dll": {}
+        }
       }
     }
   },
@@ -1797,10 +1812,16 @@
         "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Lab_5.BLL/1.0.0": {
+      "type": "project",
+      "path": "../Lab_5.BLL/Lab_5.BLL.csproj",
+      "msbuildProject": "../Lab_5.BLL/Lab_5.BLL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Lab_5.BLL >= 1.0.0",
       "MSTest.TestAdapter >= 4.0.2",
       "MSTest.TestFramework >= 4.0.2",
       "Microsoft.NET.Test.Sdk >= 18.0.1"
@@ -1837,7 +1858,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gamer\\RiderProjects\\Labs-2-course-1-semester\\Lab_5.BLL\\Lab_5.BLL.csproj": {
+              "projectPath": "C:\\Users\\gamer\\RiderProjects\\Labs-2-course-1-semester\\Lab_5.BLL\\Lab_5.BLL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
