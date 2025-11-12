@@ -28,16 +28,14 @@ namespace Lab_5.PL
             {
                 student.LastName = "";
                 
-                // Якщо код дійшов сюди, помилка не виникла = тест провалено
                 Assert.Fail("Очікувався виняток ArgumentException, але він не виник.");
             }
             catch (ArgumentException)
             {
-                // Успіх, виняток було зловлено
+                // Успіх
             }
             catch (Exception ex)
             {
-                // Виняток іншого типу = тест провалено
                 Assert.Fail($"Очікувався ArgumentException, але виник {ex.GetType().Name}.");
             }
         }
