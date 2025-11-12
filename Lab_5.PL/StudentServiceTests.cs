@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 namespace Lab_5.PL
 {
+    [TestClass]
     public class StudentServiceTests
     {
+        [TestMethod]
         public void CalculateThirdYearStudentsFromUkraine_ReturnsCorrectCount()
         {
             var students = new List<Student>
@@ -23,6 +25,7 @@ namespace Lab_5.PL
             Assert.AreEqual(2, count);
         }
 
+        [TestMethod]
         public void CalculateThirdYearStudentsFromUkraine_NoMatches_ReturnsZero()
         {
             var students = new List<Student>
@@ -38,9 +41,10 @@ namespace Lab_5.PL
             Assert.AreEqual(0, count);
         }
 
+        [TestMethod]
         public void ShouldBeExpelled_FailingGrade_ReturnsTrue()
         {
-            var service = new StudentService(null); 
+            var service = new StudentService(null!); 
             var student = new Student { LastName = "E", AverageGrade = 2.9, Course = 1 };
 
             bool result = service.ShouldBeExpelled(student);
@@ -48,9 +52,10 @@ namespace Lab_5.PL
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
         public void ShouldBeExpelled_PassingGrade_ReturnsFalse()
         {
-            var service = new StudentService(null);
+            var service = new StudentService(null!);
             var student = new Student { LastName = "F", AverageGrade = 3.0, Course = 1 };
 
             bool result = service.ShouldBeExpelled(student);
